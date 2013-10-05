@@ -2,20 +2,22 @@
 \usepackage{setspace}
 \usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
 \newenvironment{rhead}
-	{\fontfamily{\sfdefault}\selectfont\centering}
+	{\fontfamily{\sfdefault}\selectfont\noindent}
 	{\par}
 
 \onehalfspacing
 \begin{document}
 
 \begin{rhead}
-	\begin{Large}Dillon Murphy\end{Large} \\
-	80 New Boston Rd $\bullet$
-	Dudley, MA 01571 \\
-	(774) 303-2828 \\
+	\begin{Large}Dillon Murphy\end{Large}
+	\hfill (774) 303-2828 $\bullet$
 	dmurphy10@worcester.edu
 \end{rhead}
-\hrulefill
+	\noindent \hrulefill\\
+\begin{rhead}
+	\phantom{}\hfill 80 New Boston Rd $\bullet$
+	Dudley, MA 01571 \\
+\end{rhead}
 
 
 \end{document}
