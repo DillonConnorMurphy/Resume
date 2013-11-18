@@ -1,23 +1,37 @@
 \documentclass[12pt,notitlepage]{article}
 \usepackage{setspace}
+\usepackage[normalem]{ulem}
 \usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
 \newenvironment{rhead}
 	{\fontfamily{\sfdefault}\selectfont\noindent}
 	{\par}
 
+\newenvironment{area}
+	{
+		\vspace{1em}
+		\fontfamily{\sfdefault}\selectfont\begin{singlespace}
+	}
+	{\\\hrulefill\end{singlespace}\par}
+
+\newcommand{\areaName}[1]{
+	\noindent \uline{\hfill\phantom{.}}\\
+	\uline{\phantom{.}\hfill{\Large\textbf{#1}}\hfill\phantom{.}}\\
+}
+
 \onehalfspacing
 \begin{document}
-
 \begin{rhead}
-	\begin{Large}Dillon Murphy\end{Large}
+	\uline{
+	{\LARGE Dillon Murphy }
 	\hfill (774) 303-2828 $\bullet$
-	dmurphy10@worcester.edu
-\end{rhead}
-	\noindent \hrulefill\\
-\begin{rhead}
+	dillon.connor.murphy@gmail.com} \\
 	\phantom{}\hfill 80 New Boston Rd $\bullet$
 	Dudley, MA 01571 \\
 \end{rhead}
+
+\begin{area}
+	\areaName{Education}
+\end{area}
 
 
 \end{document}
