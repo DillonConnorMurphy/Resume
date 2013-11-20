@@ -1,7 +1,10 @@
-\documentclass[12pt,notitlepage]{article}
+\documentclass[10pt,notitlepage]{article}
 \usepackage{setspace}
 \usepackage[normalem]{ulem}
 \usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+\usepackage{mdwlist}
+\pagenumbering{gobble}
+
 \newenvironment{rhead}
 	{\fontfamily{\sfdefault}\selectfont\noindent}
 	{\par}
@@ -18,6 +21,9 @@
 	\uline{\phantom{.}\hfill{\Large\textbf{#1}}\hfill\phantom{.}}\\
 }
 
+\newcommand{\B}[1]{\textbf{#1}}
+\newcommand{\I}[1]{\textit{#1}}
+
 \onehalfspacing
 \begin{document}
 \begin{rhead}
@@ -32,6 +38,54 @@
 \begin{area}
 	\areaName{Education}
 \end{area}
+\noindent \B{Worcester State University}, Worcester, MA\hfill\B{2010-2013}\\
+\begin{tabular}{@{}ll}
+Degree:&Bachelor of Computer Science\\
+&Minor in Mathematics\\
+\multicolumn{2}{@{}l}{Academic Achievement:}\\
+&Phi Eta Sigma National Honor Society\\
+&Worcester State Honors Program\\
+&Six Semester Dean's List\\
+&CCSCNE Collegiate Programming Competition, 2012-2013
+\end{tabular}\\
 
+\begin{area}
+	\areaName{Related Experience}
+\end{area}
 
+\begin{area}
+	\areaName{Employment}
+\end{area}
+\noindent \B{Cyberonic Internet Communications, Inc.}, Worcester, MA
+\hfill\B{2012-present}\\
+\I{Developer}
+\begin{itemize*}
+\item Project Development
+\begin{itemize*}
+	\item Scripted automated tasks in Bash and Perl
+	\item Developed modules for Freeside (written in Perl)
+	\item Web development using PHP, Perl, JavaScript and Apache
+	\item Aided in network setup and management
+\end{itemize*}
+\item Server Install/Setup/Maintenance
+\begin{itemize*}
+	\item Installed and setup CentOS Linux and Debian Linux
+	\item Installed, setup, and maintained Freeside Open-Source Billing System
+	\item Implemented Network Attached Storage using FreeNAS
+\end{itemize*}
+\item Worked with upper management to coordinate and schedule development goals
+\item Documented and managed work using MediaWiki and Git
+\end{itemize*}
+\vspace{1em}
+\noindent \B{UMass Mentoring for Entry Level Computer Science Courses}, Worcester,
+MA\hfill\B{2012-present}\\
+\I{Student Mentor}
+\begin{itemize*}
+\item Led classroom style mentoring sessions reviewing and expanding topics related
+to in-class material
+\item Submitted collected data to UMass for further analysis
+\end{itemize*}
+\vspace{1em}
+\noindent \B{Price Chopper Supermarkets}, Webster, MA\hfill\B{2008-2011}\\
+\I{Service Clerk}
 \end{document}
